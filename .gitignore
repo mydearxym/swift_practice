@@ -1,0 +1,7 @@
+my-weather/*.xcodeproj
+my-weather/*.xcworkspace
+my-weather/Pods
+
+myTodoList/*.xcodeproj
+myTodoList/*.xcworkspace
+myTodoList/Pods
