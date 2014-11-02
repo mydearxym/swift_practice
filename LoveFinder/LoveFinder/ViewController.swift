@@ -56,6 +56,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let hasPropertyText = hasProperty.on ? "有房":"无房"
         
         result.text = "\(name.text), \(age)岁, \(genderText), 身高:\(height.text), \(hasProperty), 求交往!"
+        
         println(result.text)
     }
 
