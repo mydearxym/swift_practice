@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,12 +22,33 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcX-dd-cYK" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-9f-2Yp">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn8-yq-y6z">
+                                        <rect key="frame" x="75" y="54" width="450" height="299"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="0.99360251913265307" green="0.99360251913265307" blue="0.99360251913265307" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0057288248432814512" green="0.58156593829900627" blue="0.82738759566326525" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uhA-9f-2Yp" firstAttribute="top" secondItem="FcX-dd-cYK" secondAttribute="top" constant="10" id="BM6-CE-qNU"/>
+                                    <constraint firstAttribute="centerX" secondItem="uhA-9f-2Yp" secondAttribute="centerX" id="SaS-IG-L12"/>
+                                    <constraint firstAttribute="bottom" secondItem="tn8-yq-y6z" secondAttribute="bottom" constant="10" id="XEs-6s-Lti"/>
+                                    <constraint firstAttribute="centerX" secondItem="tn8-yq-y6z" secondAttribute="centerX" id="jgU-TA-5da"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40730823309376363" green="0.7916943221202809" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FcX-dd-cYK" secondAttribute="bottom" id="FCi-b7-CQh"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="GkX-kG-qle" secondAttribute="height" multiplier="0.4" id="G6M-if-GYx"/>
                             <constraint firstAttribute="trailing" secondItem="FcX-dd-cYK" secondAttribute="trailing" id="GCQ-Xo-qVs"/>
                             <constraint firstItem="FcX-dd-cYK" firstAttribute="top" secondItem="GkX-kG-qle" secondAttribute="bottom" constant="20" id="N7J-8k-GTe"/>
                             <constraint firstAttribute="centerX" secondItem="GkX-kG-qle" secondAttribute="centerX" id="WwK-tW-DA5"/>
